@@ -1,7 +1,7 @@
-package com.csmithswim;
+package Account;
 
 public class BankAccount {
-    private int balance;
+    protected int balance;
     private String owner;
     private String accountNum;
     private String type;

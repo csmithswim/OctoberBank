@@ -1,4 +1,4 @@
-package com.csmithswim;
+package Account;
 
 public class CheckingAccount extends BankAccount {
     private int dailyLimit;
