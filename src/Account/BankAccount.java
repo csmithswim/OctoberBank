@@ -27,4 +27,7 @@ public class BankAccount {
     public String toString() {
         return "type: " + type + "\tAccountNum: "+ "\tOwner: " + owner + "\tbalance: " + balance;
     }
+
+    public int getBalance(){return balance;}
+
 }

@@ -10,6 +10,16 @@ public class CDInvestment extends InvestmentAccount {
         super(balance, owner, accountNum, 5, "Certificate of Deposit");
         this.timeFrame = timeFrame;
     }
+
+    public void checkIfInterest(int time){
+        if (time <= timeFrame && balance > 0);
+            applyInvestment();
+    }
+
+    @Override
+    public void withdraw(int amt){
+        return;
+    }
 }
 
 

@@ -17,4 +17,9 @@ public class InvestmentAccount extends BankAccount {
         int amount = balance * (investment /100);
         balance += amount;
     }
+
+    @Override
+    public void withdraw(int amt) {
+        super.withdraw(amt+1000);
+    }
 }
