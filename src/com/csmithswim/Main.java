@@ -19,7 +19,7 @@ public class Main {
 //        System.out.println(myChecking);
         System.out.println(mySavings);
 //        myAcct.deposit(1000);
-//        myChecking.deposit(2000);
+//        myChecking.deposit(2000);Roo
         mySavings.deposit(10000);
 //        System.out.println(myAcct.toString());
 //        myChecking.withdraw(10000);
