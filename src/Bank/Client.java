@@ -28,6 +28,8 @@ public class Client {
     }
 
     public void addDebitCard(String AccountNum){
+        System.out.println(accounts);
+//        debitCards.add()
         //accountNum list of accounts find the account.
         //Find the account and save it in an Account variable
         //Display the account details to the console.
