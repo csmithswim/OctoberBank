@@ -33,6 +33,18 @@ public class Client {
         //Display the account details to the console.
     }
 
+    public String displayAccounts() {
+        String output = "Accounts:\n";
+        for (var account : accounts) {
+            output += account.toString() + "\n";
+        }
+        output += "\nDebitCards:\n";
+        for (var card : debitCards) {
+            output += card.toString() + "\n";
+        }
+        return output;
+    }
+
 
 
 }
