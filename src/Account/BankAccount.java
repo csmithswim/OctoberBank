@@ -12,22 +12,32 @@ public class BankAccount implements Account {
         this.accountNum = accountNum;
         this.type = type;
     }
-    public void deposit(int amt){
+
+    public void deposit(int amt) {
         if (amt > 0) {
             balance += amt;
         }
     }
+
     public void withdraw(int amt) {
         if (amt <= balance) {
             balance -= amt;
         }
     }
 
-    @Override //Friendly method to get a string version of the object.
-    public String toString() {
-        return "type: " + type + "\tAccountNum: "+ "\tOwner: " + owner + "\tbalance: " + balance;
+    @Override
+    public String getAccountNum() {
+        return accountNum;
     }
 
-    public int getBalance(){return balance;}
+    @Override
+    public String toString() {
+        int dollar = balance / 100;
+        int cents = balance % 100;
+        String balanceF = "$"+dollar + "." + cents;
+        return "type: " + type + "\tAccountNum: " + accountNum + "\tOwner: " + owner + "\tbalance: " + balance;
+    }
+
+    public int getBalance() { return balance; }
 
 }
