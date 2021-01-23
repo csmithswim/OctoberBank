@@ -43,8 +43,9 @@ public class Client {
         Account primaryAccount = accounts.get(accountNum);
         // TODO: verify the account is a checking account.
         // using instanceOf
+        if (primaryAccount instanceof CheckingAccount){
         DebitCard card = new DebitCard("1337", "5555", "032", name, (CheckingAccount) primaryAccount);
-        debitCards.add(card);
+        debitCards.add(card);}
     }
 
     public String displayAccounts() {
@@ -61,6 +62,10 @@ public class Client {
 
     public String displayAccount(String accountNum) {
         return accounts.get(accountNum).toString();
+    }
+
+    public String getName(){
+        return name;
     }
 
 
